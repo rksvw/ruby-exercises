@@ -3,8 +3,18 @@ def nil_array(number)
   return Array.new(number)
 end
 
+def two_nil_array(number)
+  # return an array containing two `nil` element
+  return Array.new(number)
+end
+
 def first_element(array)
   # return the first element of the array
+  return array[0]
+end
+
+def first_string_array_element(array)
+  # return the first string element of the array
   return array[0]
 end
 
@@ -13,9 +23,14 @@ def third_element(array)
   return array[2]
 end
 
+def third_string_element_if_num(array)
+  # return nil if the array does not have a third element
+  return array[2]
+end
+
 def last_three_elements(array)
   # return the last 3 elements of the array
-  return array[-3..-1]
+  return array[-3..-1] ? array[-3..-1] : array
 end
 
 def add_element(array)
